@@ -3,11 +3,43 @@
 <html>
 
 <head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Responsive Navbar</title>
+
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">BrandName</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+		</button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="bootcampDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Bootcamps
+		</a>
+                    <div class="dropdown-menu" aria-labelledby="bootcampDropdown">
+                        <a class="dropdown-item" href="#">Popular Bootcamps</a>
+                        <a class="dropdown-item" href="#">Bootcamp Developers</a>
+                        <a class="dropdown-item" href="#">Bootcamp Financing</a>
+                        <a class="dropdown-item" href="#">Bootcamp Grads and Alumni</a>
+						</div>
+                </li>
+                <!-- Repeat similar structure for other dropdowns -->
+            </ul>
+            <form class="form-inline ml-auto">
+                <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./script.js">
 </script>
 
